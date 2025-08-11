@@ -1,2 +1,296 @@
-<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Home - CappyBara Tech</title><link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap' rel='stylesheet'><style>:root{--bg:#fbfbfc;--card:#fff;--muted:#6b7280;--accent:#0f766e;--accent2:#1e293b}
-*{box-sizing:border-box}body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;margin:0;background:var(--bg);color:var(--accent2)}.container{max-width:1100px;margin:40px auto;padding:24px}header{display:flex;align-items:center;gap:18px;margin-bottom:28px} .logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#0ea5a4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px}nav{margin-left:auto}nav a{margin-left:16px;color:var(--accent2);text-decoration:none;font-weight:600} .hero{background:var(--card);padding:36px;border-radius:12px;box-shadow:0 6px 20px rgba(16,24,40,0.06);display:flex;gap:24px;align-items:center} .hero .left{flex:1}.hero h1{margin:0;font-size:28px}.hero p{color:var(--muted);margin-top:8px}.devices{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px}.card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,0.04)}.card img{width:100%;height:160px;object-fit:cover;border-radius:8px}.section-title{font-size:18px;margin-bottom:12px;font-weight:700}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.footer{margin-top:36px;padding:20px;text-align:center;color:var(--muted);font-size:14px}.small-muted{color:var(--muted);font-size:14px}.feature-list{list-style:none;padding:0;margin:0}.feature-list li{padding:6px 0;border-bottom:1px dashed #eef2f7;color:var(--muted)}.kv{display:flex;gap:8px;align-items:center}.kv strong{min-width:160px;display:inline-block}.controls{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}.btn{background:var(--accent);color:white;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}.badge{background:#fff;border:1px solid #eef2f7;padding:6px 8px;border-radius:8px;font-weight:600;color:var(--accent)}@media (max-width:900px){.devices{grid-template-columns:repeat(2,1fr)} .grid2{grid-template-columns:1fr} header{flex-direction:column;align-items:flex-start} nav{margin-left:0;margin-top:8px}}canvas{display:block;width:100%;height:220px}iframe{border-radius:8px}</style></head><body><div class='container'><header><div class='logo'>CB</div><div style='font-weight:700'>CappyBara Tech</div><nav><a href='index.html'>Home</a><a href='nara.html'>Nara</a><a href='asanda.html'>Asanda</a><a href='lunari.html'>Lunari</a><a href='zaiya.html'>Zaiya</a><a href='dashboard.html'>Dashboard</a><a href='customer.html'>Customer Data</a></nav></header><section class='hero'><div class='left'><h1>FORGET — Plug in and forget you're even ill.</h1><p class='small-muted'>CappyBara Tech builds elegant, wearable endocrine systems that manage your metabolic life so you can focus on living.</p><div style='margin-top:16px' class='controls'><a class='btn' href='dashboard.html'>Open Dashboard</a><a class='btn' href='customer.html'>Customer Portal</a></div></div><div class='right' style='width:420px'><div class='badge'>Endocrinology • Wearables • AI</div></div></section><section style='margin-top:18px'><div class='section-title'>Our Devices</div><div class='devices'><div class='card'><img src='assets/nara_render.svg' alt='nara'><h3 style='margin-top:10px'>Nara</h3><div class='small-muted'>Brief description</div></div><div class='card'><img src='assets/asanda_render.svg' alt='asanda'><h3 style='margin-top:10px'>Asanda</h3><div class='small-muted'>Brief description</div></div><div class='card'><img src='assets/lunari_render.svg' alt='lunari'><h3 style='margin-top:10px'>Lunari</h3><div class='small-muted'>Brief description</div></div><div class='card'><img src='assets/zaiya_render.svg' alt='zaiya'><h3 style='margin-top:10px'>Zaiya</h3><div class='small-muted'>Brief description</div></div></div></section><section style='margin-top:20px'><div class='grid2'><div class='card'><div class='section-title'>Mission</div><p class='small-muted'>To remove the daily burden of chronic endocrine conditions by creating seamless, reliable, and beautiful medical devices.</p></div><div class='card'><div class='section-title'>Contact</div><p class='small-muted'>hello@cappybara.tech</p></div></div></section><footer class='footer'>© CappyBara Tech — FORGET. Built with care.</footer></div><script src='https://cdn.jsdelivr.net/npm/chart.js'></script><script src='assets/script.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Home - CappyBara Tech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+         :root {
+            --bg: #fbfbfc;
+            --card: #fff;
+            --muted: #6b7280;
+            --accent: #0f766e;
+            --accent2: #1e293b;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+            margin: 0;
+            background: var(--bg);
+            color: var(--accent2);
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 24px;
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 28px;
+        }
+        
+        .logo {
+            width: 56px;
+            height: 56px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, var(--accent), #0ea5a4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .logo img {
+            width: 56px;
+            height: 56px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        nav {
+            margin-left: auto;
+        }
+        
+        nav a {
+            margin-left: 16px;
+            color: var(--accent2);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .hero {
+            background: var(--card);
+            padding: 36px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(16, 24, 40, 0.06);
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+        
+        .hero .left {
+            flex: 1;
+        }
+        
+        .hero h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        
+        .hero p {
+            color: var(--muted);
+            margin-top: 8px;
+        }
+        
+        .devices {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+        }
+        
+        .card {
+            background: var(--card);
+            padding: 18px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(16, 24, 40, 0.04);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        
+        .grid2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+        
+        .footer {
+            margin-top: 36px;
+            padding: 20px;
+            text-align: center;
+            color: var(--muted);
+            font-size: 14px;
+        }
+        
+        .small-muted {
+            color: var(--muted);
+            font-size: 14px;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .feature-list li {
+            padding: 6px 0;
+            border-bottom: 1px dashed #eef2f7;
+            color: var(--muted);
+        }
+        
+        .kv {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        
+        .kv strong {
+            min-width: 160px;
+            display: inline-block;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+        
+        .btn {
+            background: var(--accent);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .badge {
+            background: #fff;
+            border: 1px solid #eef2f7;
+            padding: 6px 8px;
+            border-radius: 8px;
+            font-weight: 600;
+            color: var(--accent);
+        }
+        
+        @media (max-width: 900px) {
+            .devices {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .grid2 {
+                grid-template-columns: 1fr;
+            }
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav {
+                margin-left: 0;
+                margin-top: 8px;
+            }
+        }
+        
+        canvas {
+            display: block;
+            width: 100%;
+            height: 220px;
+        }
+        
+        iframe {
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"><img src="assets/cappybaratech.jpeg" alt="CBt" /></div>
+            <div style="font-weight: 700">CappyBara Tech</div>
+            <nav>
+                <a href="index.html">Home</a><a href="nara.html">Nara</a
+          ><a href="asanda.html">Asanda</a><a href="lunari.html">Lunari</a
+          ><a href="zaiya.html">Zaiya</a><a href="dashboard.html">Dashboard</a
+          ><a href="customer.html">Customer Data</a>
+            </nav>
+        </header>
+        <section class="hero">
+            <div class="left">
+                <h1>FORGET — Plug in and forget you're even ill.</h1>
+                <p class="small-muted">
+                    CappyBara Tech builds elegant, wearable endocrine systems that manage your metabolic life so you can focus on living.
+                </p>
+                <div style="margin-top: 16px" class="controls">
+                    <a class="btn" href="dashboard.html">Open Dashboard</a
+            ><a class="btn" href="customer.html">Customer Portal</a>
+                </div>
+            </div>
+            <div class="right" style="width: 420px">
+                <div class="badge">Endocrinology • Wearables • AI</div>
+            </div>
+        </section>
+        <section style="margin-top: 18px">
+            <div class="section-title">Our Devices</div>
+            <div class="devices">
+                <div class="card">
+                    <img src="assets/nara_render.svg" alt="nara" />
+                    <h3 style="margin-top: 10px">Nara</h3>
+                    <div class="small-muted">Brief description</div>
+                </div>
+                <div class="card">
+                    <img src="assets/asanda_render.svg" alt="asanda" />
+                    <h3 style="margin-top: 10px">Asanda</h3>
+                    <div class="small-muted">Brief description</div>
+                </div>
+                <div class="card">
+                    <img src="assets/lunari_render.svg" alt="lunari" />
+                    <h3 style="margin-top: 10px">Lunari</h3>
+                    <div class="small-muted">Brief description</div>
+                </div>
+                <div class="card">
+                    <img src="assets/zaiya_render.svg" alt="zaiya" />
+                    <h3 style="margin-top: 10px">Zaiya</h3>
+                    <div class="small-muted">Brief description</div>
+                </div>
+            </div>
+        </section>
+        <section style="margin-top: 20px">
+            <div class="grid2">
+                <div class="card">
+                    <div class="section-title">Mission</div>
+                    <p class="small-muted">
+                        To remove the daily burden of chronic endocrine conditions by creating seamless, reliable, and beautiful medical devices.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="section-title">Contact</div>
+                    <p class="small-muted">hello@cappybara.tech</p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            © CappyBara Tech — FORGET. Built with care.
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
