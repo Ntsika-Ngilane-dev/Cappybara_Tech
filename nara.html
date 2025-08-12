@@ -108,13 +108,22 @@
         
         nav {
             margin-left: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
         }
         
         nav a {
-            margin-left: 16px;
             color: var(--accent2);
             text-decoration: none;
             font-weight: 600;
+            padding: 8px 0;
+            margin-left: 16px;
+            transition: color 0.2s;
+        }
+        
+        nav a:hover {
+            color: var(--accent);
         }
         
         .hero {
@@ -319,16 +328,14 @@
             <div class="logo"><img src="assets/cappybaratech.jpeg" alt="CBt" /></div>
             <div style="font-weight: 700">CappyBara Tech</div>
             <nav>
-                <button class="nav-toggle" aria-label="Open navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="nara.html">Nara</a>
-                    <a href="asanda.html">Asanda</a>
-                    <a href="lunari.html">Lunari</a>
-                    <a href="zaiya.html">Zaiya</a>
-                    <a href="dashboard.html">Dashboard</a>
-                    <a href="customer.html">Customer Data</a>
-                </div>
+                <a href="index.html">Home</a>
+                <a href="nara.html">Nara</a>
+                <a href="asanda.html">Asanda</a>
+                <a href="lunari.html">Lunari</a>
+                <a href="zaiya.html">Zaiya</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="customer.html">Customer Data</a>
+                <a href="fioconnect.html">FioConnect</a>
             </nav>
         </header>
         <section class="card" style="padding: 22px">
